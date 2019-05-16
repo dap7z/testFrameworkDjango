@@ -18,7 +18,6 @@ INSTALLATION
 1) Configuration SGBD :
 
 * Installer Postgres sur le poste
-* (+ Ajouter à la variable d'environement "PATH" : setx PATH "%PATH%;C:\Program Files\PostgreSQL\10\bin")
 * Avec PgAdmin, créér une base de données lengowTestDP et un utilisateur test/test
 
 2) Initialisation et lancement de l'application :
