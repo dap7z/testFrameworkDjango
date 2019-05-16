@@ -1,0 +1,39 @@
+{% load static %}
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Lengow{% if title %} | {{ title }}{% endif %}</title>
+        <!-- STYLES -->
+        {% block styles %}
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="stylesheet" href="{% static "base.css" %}">
+        {% endblock %}
+    </head>
+
+    <body>
+        <header id="page-header">
+            <span id="btn-home">
+                <a href="/" class="btn">
+                    <i class="material-icons">home</i>
+                </a>
+            </span>
+            <span>
+                {% block header %}Test du framework Django{% endblock %}
+            </span>
+        </header>
+        <div id="page-content">
+            <h2>{{ title|default:"" }}</h2>
+            {% block content %}{% endblock %}
+        </div>
+        <footer id="page-footer">
+            {% block footer %}<p>© 2019 Damien Pointier</p>{% endblock %}
+        </footer>
+        <!-- SCRIPTS -->
+        {% block scripts %}{% endblock %}
+    </body>
+
+</html>

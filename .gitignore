@@ -1,0 +1,9 @@
+*~
+*.orig
+*.swp
+*.pyc
+.DS_Store
+docs/_build/
+.coverage
+
+.idea

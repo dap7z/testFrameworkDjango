@@ -1,0 +1,10 @@
+This folder is used to store app templates. #
+#############################################
+
+
+Sous dossier orders utile ? Oui, ci-dessous extraits de https://docs.djangoproject.com/fr/2.2/intro/tutorial03 :
+    Le chemin de votre gabarit doit être polls/templates/polls/index.html, vous pouvez désigner ce gabarit dans Django tout simplement par polls/index.html.
+    Il serait aussi possible de placer directement nos gabarits dans polls/templates (plutôt que dans un sous-répertoire polls), mais ce serait une mauvaise idée.
+    Django choisit le premier gabarit qu’il trouve pour un nom donné et dans le cas où vous avez un gabarit de même nom dans une autre application, Django ne fera pas la différence.
+    Il faut pouvoir indiquer à Django le bon gabarit, et la manière la plus simple de faire cela est d’utiliser des espaces de noms. 
+    C’est-à-dire que nous plaçons ces gabarits dans un autre répertoire portant le nom de l’application.

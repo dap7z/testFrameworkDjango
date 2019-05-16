@@ -1,0 +1,8 @@
+Django==2.2.1
+djangorestframework==3.9.4
+django-rest-swagger==2.2.0
+Markdown==3.1
+requests==2.21.0
+tqdm==4.31.1
+psycopg2-binary==2.8.2
+django-url-filter==0.3.12

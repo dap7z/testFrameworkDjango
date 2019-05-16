@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <table class="table table-sm table-bordered" style="max-width: 700px;">
+        <tr>
+            <th>lien</th>
+            <th>description</th>
+        </tr>
+        {% for app in apps %}
+            <tr>
+                <td><a href="{{ app.link }}">{{ app.link }}</a></td>
+		        <td>{{ app.desc }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <hr>
+    <div>
+        Pour mettre à jour les comandes, exécuter : python manage.py updateOrders
+    </div>
+{% endblock %}
